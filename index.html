@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form action="login_verwerk.php" method="POST">
+        <label for="inputUsername">Username: </label>
+        <input type="text" name="inputUsername" id="inputUsername">
+
+        <label for="inputPassword">Password: </label>
+        <input type="password" name="inputPassword" id="inputPassword">
+
+        <input type="submit" value="Submit" name="submit">
+    </form>
+    <p>Versie 2.6</p>
+
+    <h1>voor nieuwe gebruikers</h1>
+    <form action="lid_nieuw_verwerk.php" method="POST">
+        <input type="text" name="username" placeholder="Gebruikersnaam"><br>
+        <input type="password" name="password" placeholder="Wachtwoord"><br>
+        <input type="submit" value="Verzenden">
+    </form>
+</body>
+
+</html>
