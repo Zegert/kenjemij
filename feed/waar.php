@@ -9,9 +9,13 @@ $itemArray = mysqli_query($mysqli , $sql);
 }
 $likes += 1;
 
+
 $sqlUpdate = "UPDATE `feed` SET `waar`='$likes' WHERE ID=" . $itemID;
+
 if(mysqli_query($mysqli , $sqlUpdate)){
+    
     header('Location:feed.php');
+
 }else{
     echo "error";
 }
