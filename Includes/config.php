@@ -14,28 +14,27 @@ $mysqli = mysqli_connect($DB_hostname, $DB_username, $DB_password, $DB_database)
 if (!$mysqli) {
     echo "Fout, geen connectie naar de database.";
 }
-class Friends
-{
-    static public function renderFriendShip($user_one, $user_two, $type)
-    {
-        if (!empty($user_one) && !empty($user_two)) {
-            global $mysqli;
-            switch ($type) {
-                case 'isThereRequestPending':
-                    $query = mysqli_query($mysqli, "SELECT * FROM friends WHERE user_one= ' . $user_one . ' AND user_two= ' . $user_two . ' 
-                    AND friendship_official='0' OR SELECT * FROM friends WHERE user_two=' . $user_two . ' AND user_one= ' . $user_one . ' 
-                    AND friendship_official='0'");
-                    $result = mysqli_num_rows($query);
-                    break;
-
-                case 'isThereFriendship':
-                    $query = mysqli_query($mysqli, "SELECT * FROM friends WHERE user_one= ' . $user_one . ' AND user_two= ' . $user_two . '
-                     AND friendship_official='1' OR SELECT * FROM friends WHERE user_two= ' . $user_two . ' AND user_one= ' . $user_one . '
-                     AND friendship_official='1'");
-                    $result = mysqli_num_rows($query);
-                    break;
-            }
-        }
-    }
-}
+// class Friends
+// {
+//     static public function renderFriendShip($user_one, $user_two, $type)
+//     {
+//         if (!empty($user_one) && !empty($user_two)) {
+//             global $mysqli;
+//             switch ($type) {
+//                 case 'isThereRequestPending':
+//                     $query = mysqli_query($mysqli, "SELECT * FROM friends WHERE user_one= ' . $user_one . ' AND user_two= ' . $user_two . ' 
+//                     AND friendship_official='0' OR SELECT * FROM friends WHERE user_two=' . $user_two . ' AND user_one= ' . $user_one . ' 
+//                     AND friendship_official='0'");
+//                     $result = mysqli_num_rows($query);
+//                     break;
+//                 case 'isThereFriendship':
+//                     $query = mysqli_query($mysqli, "SELECT * FROM friends WHERE user_one= ' . $user_one . ' AND user_two= ' . $user_two . '
+//                      AND friendship_official='1' OR SELECT * FROM friends WHERE user_two= ' . $user_two . ' AND user_one= ' . $user_one . '
+//                      AND friendship_official='1'");
+//                     $result = mysqli_num_rows($query);
+//                     break;
+//             }
+//         }
+//     }
+// }
 ?>

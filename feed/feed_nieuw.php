@@ -6,6 +6,7 @@ require_once('../Includes/config.php');
 
 <head>
     <title>Nieuw item || Ken je mij</title>
+    <link rel="stylesheet" href="../CSS/feed_nieuw.css"> 
 </head>
 
 <body>
