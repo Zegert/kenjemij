@@ -1,5 +1,6 @@
 <?php
 require_once('../Includes/config.php');
+//var_dump($_SESSION['ID']);
 ?>
 <!DOCTYPE html>
 <html lang="en">

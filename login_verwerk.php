@@ -20,6 +20,7 @@
             echo "Login Success!";
             //Session started
             $_SESSION['ID'] = $row['ID'];
+            var_dump($_SESSION['ID']);
             //Go to home page
             header("Location: ./feed/feed.php");
         } else {
