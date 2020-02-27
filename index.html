@@ -3,26 +3,82 @@
 <head>
     <title>Login</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/style_inlog.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="scripts//script_inlog.js"></script>
 </head>
 
 <body>
-    <form action="login_verwerk.php" method="POST">
-        <label for="inputUsername">Username: </label>
-        <input type="text" name="inputUsername" id="inputUsername">
 
-        <label for="inputPassword">Password: </label>
-        <input type="password" name="inputPassword" id="inputPassword">
+    <header>
+        <h2>Welkom op KenJeMij</h2>
+    </header>
+    <div id="id01" class="modal">
+        <div class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+            </div>
+            <div class="inlog_container">
+                <div class="zichtbaar">
+                    <form action="login_verwerk.php" method="POST">
+                        <label for="inputUsername">Username: </label>
+                        <input type="text" name="inputUsername" id="inputUsername">
+                        <label for="inputPassword">Password: </label>
+                        <input type="password" name="inputPassword" id="inputPassword">
+                        <button type="submit" value="Submit" name="submit">Inloggen</button>
+                    </form>
+                </div>
+                <div class="inlog_container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id02" class="modal">
+        <div class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+            </div>
+            <div class="inlog_container">
+                <div class="onzichtbaar">
+                    <h1>voor nieuwe gebruikers</h1>
+                    <form action="lid_nieuw_verwerk.php" method="POST" class="inlog_container">
+                        <input type="text" name="username" placeholder="Gebruikersnaam"><br>
+                        <input type="password" name="password" placeholder="Wachtwoord"><br>
+                        <button type="submit" value="Verzenden">Registreren</button>
+                    </form>
+                </div>
+                <div class="inlog_container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <article class="uitleg_website1">
+        <h3>Welkom op KenJeMij</h3>
+        <p>Op deze website kan je een stelling geven waar je vrienden op kunnen reageren.
+            Je vrienden kunnen kiezen of het een feit is of een leugen. Na 24 uur zet de eigenaar van de stelling het
+            antwoord online.
+            Heb je het goed dan krijg je een punt erbij, heb je het fout dan gaat er een punt vanaf.</p>
+    </article>
 
-        <input type="submit" value="Submit" name="submit">
-    </form>
-    <p>Versie 2.6</p>
+    <div class="uitleg_website2">
+        <h3>Ben je nog geen lid? Registreer je hier en wordt lid van de website.<br><button
+                onclick="document.getElementById('id02').style.display='block'"
+                style="width:auto; margin-right:1%; background-color: #FF931E" class="signup">Sign Up</button></h3>
+    </div>
 
-    <h1>voor nieuwe gebruikers</h1>
-    <form action="lid_nieuw_verwerk.php" method="POST">
-        <input type="text" name="username" placeholder="Gebruikersnaam"><br>
-        <input type="password" name="password" placeholder="Wachtwoord"><br>
-        <input type="submit" value="Verzenden">
-    </form>
+    <div class="uitleg_website2">
+        <h3>Ben je wel al lid. Log hier in om op je profiel te komen.<br><button
+                onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto; margin-right:1%; background-color: #FF931E" class="signup">Login</button></h3>
+    </div>
+
+    <script src="js2/script_inlog.js"></script>
 </body>
 
 </html>
