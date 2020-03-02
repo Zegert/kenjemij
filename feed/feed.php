@@ -49,18 +49,13 @@ require_once('../Includes/config.php');
             while ($row = mysqli_fetch_array($result))
             {
                 echo "<td>" . $row['userName'] . "</td>";
-            }
-
-            if ($result == $row)
-            {
                 echo "<p>Gemaakt door: " . $username . "</p>";
                 echo '<p>Titel: ' . $row['titel']; '</p>';
                 echo '<p>Beschrijving: ' . $row['beschrijving']; '</p>';
                 echo "<br><a href='waar.php?itemID=$itemID'>Waar(" . $row['waar'] .")</a> of <a href='nietwaar.php?itemID=$itemID'>Niet waar(". $row['nietwaar'] .")</a><br>";
                 echo "<br>";
-
-        }
         echo "</div>";
+            }
     ?>
 </body>
 </html>
