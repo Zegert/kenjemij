@@ -1,6 +1,5 @@
 <?php
 require_once('../Includes/config.php');
-//var_dump($_SESSION['ID']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +12,6 @@ require_once('../Includes/config.php');
     <!-- Stylesheets hier -->
 </head>
 <body>
-<<<<<<< Updated upstream
     <a href="feed_nieuw.php"><div><p>Voeg zelf een feit/leugen toe</p></div></a>
     <?php 
         $sql = "SELECT * FROM feed";
@@ -27,9 +25,7 @@ require_once('../Includes/config.php');
                 $UNArray = mysqli_query($mysqli , $sqlUN);
                 while($rowUN = $UNArray->fetch_assoc()){
                     $username = $rowUN['userName'];
-=======
-
-<!--BEGIN NAVBAR-->
+?>
 <div class="topnav">
     <a href="../profiel.php">Profiel</a>
     <a href="../uitlog.php" style="float:right">Uitloggen</a>
@@ -57,12 +53,6 @@ require_once('../Includes/config.php');
 
             if ($result == $row)
             {
-                {
-                    ?>
-
-                    <?php
->>>>>>> Stashed changes
-                }
                 echo "<p>Gemaakt door: " . $username . "</p>";
                 echo '<p>Titel: ' . $row['titel']; '</p>';
                 echo '<p>Beschrijving: ' . $row['beschrijving']; '</p>';
