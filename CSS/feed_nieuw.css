@@ -1,3 +1,29 @@
 body{
-    background-color: red;
+    margin: 0;
+    padding:0;
+}
+
+#container {
+    /* margin-left:40vw; */
+    margin-top:20vh;
+    text-align: center;
+}
+
+nav {
+    width:100vw;
+    height: 6vh;
+    padding-top:2vh;
+    background-color: cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav > a {
+    width:10vw;
+    color:white;
+}
+#nav_hm {
+    margin-left: 5vw;
+}
+#nav_ac {
+    margin-left:70vw;
 }
