@@ -10,7 +10,7 @@
     $result = mysqli_query($mysqli, "SELECT * FROM users WHERE ID = $id");
     $row = mysqli_fetch_array($result);
     ?>
-    <form action="profiel_bewerk_verwerk.php" method="POST">
+    <form action="profiel_aanpassen_verwerk.php" method="POST">
         <input type="hidden" name="ID" value="<?php echo $row['ID']; ?>">
         <label for="Datum">Gebruikersnaam: </label>
         <input type="text" name="Gebruikersnaam" value="<?php echo $row['userName']; ?>"><br>
