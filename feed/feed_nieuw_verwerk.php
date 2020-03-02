@@ -9,7 +9,7 @@ $keuze = $_POST['keuze'];
 $sql = "INSERT INTO feed (ID , userID , titel , beschrijving , antwoord) 
         VALUES (NULL, '$id' , '$titel', '$beschrijving' , '$keuze')";
 
-    
+
 if (mysqli_query($mysqli , $sql)){
     echo "toegevoegd!";
     header("Location:feed.php");
