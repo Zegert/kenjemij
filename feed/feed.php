@@ -16,8 +16,8 @@ require_once('../Includes/config.php');
 
 <!--BEGIN NAVBAR-->
 <div class="topnav">
-    <a href="../profiel_kjm.php">Profiel</a>
-    <a href="../index.html" style="float:right">Inloggen</a>
+    <a href="../profiel.php">Profiel</a>
+    <a href="../uitlog.php" style="float:right">Uitloggen</a>
 </div>
 
 <a href="feed_nieuw.php" class="voeg_toe"><p class="voegToe_button">Voeg zelf een feit/leugen toe</p></a>
