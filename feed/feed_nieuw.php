@@ -11,10 +11,10 @@ require_once('../Includes/config.php');
 
 <body>
     <nav>
-        <a id="nav_hm" href="#">Home</a>
-        Ken Je Mij
+        <a id="nav_hm" href="https://83504.ict-lab.nl/Beroeps/kenjemij/feed/feed.php">Home</a>
+        <a id="nav_hd">Ken Je Mij</a>
         <a id="nav_ac" href="#">Account</a>
-        <a href="#">Uitloggen</a>
+        <a href="https://83504.ict-lab.nl/Beroeps/kenjemij/uitlog.php">Uitloggen</a>
     </nav>
     <div id="container">
         <h3>Voeg zelf een feit/leugen toe!</h3>
@@ -25,7 +25,7 @@ require_once('../Includes/config.php');
             <label for="male">Waar</label><br>
             <input type="radio" name="keuze" value="niet">
             <label for="female">Niet waar</label><br>
-            <input type="submit" value="verzenden">
+            <input id="form_button" type="submit" value="verzenden">
         </form>
     </div>
 </body>
