@@ -1,0 +1,176 @@
+body
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #3FA9F5;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+/*-----------------------------------------------------------------*/
+/*BEGIN NAVBAR*/
+/*-----------------------------------------------------------------*/
+.topnav
+{
+    overflow: hidden;
+    background-color: #20E344;
+}
+
+.topnav a
+{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover
+{
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active
+{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar
+{
+    padding-left:16px;
+}
+
+/*-----------------------------------------------------------------*/
+/*BEGIN GOED_FOUT CONTAINER*/
+/*-----------------------------------------------------------------*/
+.container
+{
+    background-color: #3FA9F5;
+    width: 65%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    float: left;
+}
+
+/*-----------------------------------------------------------------*/
+/*BEGIN GOED_FOUT*/
+/*-----------------------------------------------------------------*/
+.goed
+{
+    background-color: green;
+    float:left;
+    width: 50%;
+    height: 5%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.fout
+{
+    background-color: red;
+    float:left;
+    width: 50%;
+    height: 5%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------*/
+/*BEGIN VRIENDENLIJST*/
+/*-----------------------------------------------------------------*/
+.vriendencontainer
+{
+    background-color: #3FA9F5;
+    padding-right: 10%;
+    margin-left: 2%;
+    max-width: 12%;
+    position: absolute;
+    top: 40%;
+    left: 72%;
+}
+
+.vriend
+{
+    background-color: #FF931E;
+    margin-left: 10%;
+    margin-bottom: 20%;
+    padding-right: 200px;
+    padding-bottom: 30%;
+}
+
+/*-----------------------------------------------------------------*/
+/*BEGIN PROFIEL*/
+/*-----------------------------------------------------------------*/
+.profielcontainer_home
+{
+    background-color: #3FA9F5;
+    margin-right: 25px;
+    margin-top: 43px;
+    padding: 21px;
+    float: right;
+}
+
+.profiel_template
+{
+    background-color: #3FA9F5;
+    margin: 5%;
+    margin-right: 60%;
+    padding-left: 10%;
+    padding-bottom: 50%;
+}
+
+.profiel_gegevens
+{
+    background-color: #FF931E;
+    margin-left: 5%;
+    padding: 5% 0%;
+    text-align: center;
+}
+
+.profiel_foto
+{
+    background-color: #FF931E;
+    margin-left: 5%;
+    padding-bottom: 50%;
+}
+/*-----------------------------------------------------------------*/
+/*BEGIN TEXT*/
+/*-----------------------------------------------------------------*/
+.kop
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+
+}
+
+.stelling_text
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    width: 90%;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.voeg_toe
+{
+    background-color: #3FA9F5;
+    margin-right: 12px;
+    margin-top: 50px;
+    padding: 21px;
+    float: right;
+}
+
+.voegToe_button
+{
+    background-color: #FF931E;
+    padding: 10px;
+}
