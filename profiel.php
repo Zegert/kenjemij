@@ -14,7 +14,7 @@ if (!isset($_SESSION['ID'])) {
 <body>
 <div class="topnav">
     <a href="feed/feed.php">Home</a>
-    <a href="index.html" style="float:right">Inloggen</a>
+    <a href="uitlog.php" style="float:right">Uitloggen</a>
 </div>
 <div class="profiel_template">
     <h3 class="profiel">Profiel:</h3>

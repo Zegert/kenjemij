@@ -112,10 +112,10 @@ header {
 .profielcontainer_home
 {
     background-color: #3FA9F5;
-    padding: 0% 5% 5% 5%;
-    margin-left: 1570px;
-    margin-top: 300px;
-    position: absolute;
+    margin-right: 25px;
+    margin-top: 43px;
+    padding: 21px;
+    float: right;
 }
 
 .profiel_template
@@ -162,11 +162,11 @@ header {
 
 .voeg_toe
 {
-    position: absolute;
     background-color: #3FA9F5;
-    margin-left: 1600px;
+    margin-right: 12px;
     margin-top: 50px;
     padding: 21px;
+    float: right;
 }
 
 .voegToe_button
