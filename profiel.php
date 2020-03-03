@@ -29,7 +29,7 @@ if (!isset($_SESSION['ID'])) {
             echo "<td>Username: " . $row['userName'] . "</td><br>";
             echo "<td>About: " . $row['about'] . "</td><br>";
             echo "<td>Geboortedatum: " . $row['geboortedatum'] . "</td><br>";
-            echo "<td>Punten: " . $row['punten'] . "</td>";
+            echo "<td>Punten: " . $row['punten'] . "</td><br>";
         }
         echo "<a href='profiel_aanpassen.php'>Aanpassen</a>";
         ?>
